@@ -18,6 +18,7 @@ alias composer='php -d memory_limit=-1 /usr/local/bin/composer'
 
 ######################### Symfony/ez platform bash functions
 
+alias symfony='php bin/console'
 alias sfcacheclear='php app/console cache:clear'
 alias sfasseticdump='php app/console assetic:dump'
 
