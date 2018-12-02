@@ -1,4 +1,4 @@
-FROM meg4r0m/docker-alpine-php:7.2
+FROM meg4r0m/docker-alpine-php:latest
 
 LABEL php.version=7.2
 LABEL maintainer="Florian Durano <psykoterro@gmail.com>" \
@@ -114,6 +114,6 @@ COPY bootstrap.sh /run/bootstrap.sh
 RUN chmod 755 /run/bootstrap.sh
 
 USER site:site
-WORKDIR /var/www/
+WORKDIR /home/site/www/
 
 CMD ["/run/bootstrap.sh"]
